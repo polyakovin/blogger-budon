@@ -3,7 +3,7 @@ const parser = require('body-parser');
 const express = require('express');
 const app = express();
 const router = require('./src/router.js');
-const host = 3000;
+const host = process.env.PORT || 3000;
 
 app
   .disable('x-powered-by')
